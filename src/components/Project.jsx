@@ -5,7 +5,7 @@ const Project = forwardRef((props, ref) => {
   const projects = [
     { id: 1, title: 'Project 1', category: 'category1', image: '2d drawing.jpg' },
     { id: 2, title: 'Project 2', category: 'category1', image: '2d drawing 2.jpg' },
-    { id: 3, title: 'Project 3', category: 'category1', image: 'final model.jpg' },
+    { id: 3, title: 'Project 3', category: 'category1', image: 'model.jpg' },
     { id: 4, title: 'Project 4', category: 'category1', image: 'cover3.png' },
     { id: 5, title: 'Project 5', category: 'category1', image: 'd3.png' },
     { id: 6, title: 'Project 6', category: 'category1', image: 'd4.png' },
