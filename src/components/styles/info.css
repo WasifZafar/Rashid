@@ -149,23 +149,23 @@ text {
 }
  @keyframes fadeBackground {
   0% { 
-    background-image: url('/cover1.jpg');
+    background-image: url('cover1.jpg');
       opacity: 0.9;
   }
   25% { 
-      background-image: url('/cover2.jpg');
+      background-image: url('cover2.jpg');
       opacity: 1;
   }
   50% { 
-      background-image: url('/d4.png');
+      background-image: url('d4.png');
       opacity: 0.9;
   }
   75% { 
-      background-image: url('/d3.png');
+      background-image: url('d3.png');
       opacity: 1;
   }
   100% { 
-    background-image: url('/final model.jpg');
+    background-image: url('final model.jpg');
       opacity: 0.9;
   }
 } 

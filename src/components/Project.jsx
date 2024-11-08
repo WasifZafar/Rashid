@@ -3,16 +3,16 @@ import './styles/project.css';
 
 const Project = forwardRef((props, ref) => { 
   const projects = [
-    { id: 1, title: 'Project 1', category: 'category1', image: '/2d drawing.jpg' },
-    { id: 2, title: 'Project 2', category: 'category1', image: '/2d drawing 2.jpg' },
-    { id: 3, title: 'Project 3', category: 'category1', image: '/final model.jpg' },
-    { id: 4, title: 'Project 4', category: 'category1', image: '/cover3.png' },
-    { id: 5, title: 'Project 5', category: 'category1', image: '/d3.png' },
-    { id: 6, title: 'Project 6', category: 'category1', image: '/d4.png' },
-    { id: 7, title: 'Project 7', category: 'category2', image: '/b1.png' },
-    { id: 8, title: 'Project 8', category: 'category2', image: '/b2.png' },
-    { id: 9, title: 'Project 9', category: 'category2', image: '/b4.png' },
-    { id: 10, title: 'Project 10', category: 'category3', image: '/s.png' },
+    { id: 1, title: 'Project 1', category: 'category1', image: '2d drawing.jpg' },
+    { id: 2, title: 'Project 2', category: 'category1', image: '2d drawing 2.jpg' },
+    { id: 3, title: 'Project 3', category: 'category1', image: 'final model.jpg' },
+    { id: 4, title: 'Project 4', category: 'category1', image: 'cover3.png' },
+    { id: 5, title: 'Project 5', category: 'category1', image: 'd3.png' },
+    { id: 6, title: 'Project 6', category: 'category1', image: 'd4.png' },
+    { id: 7, title: 'Project 7', category: 'category2', image: 'b1.png' },
+    { id: 8, title: 'Project 8', category: 'category2', image: 'b2.png' },
+    { id: 9, title: 'Project 9', category: 'category2', image: 'b4.png' },
+    { id: 10, title: 'Project 10', category: 'category3', image: 's.png' },
     // { id: 10, title: 'Project 10', category: 'category3', image: 'path-to-your-image10.jpg' }
   ];
 
