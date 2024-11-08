@@ -1,0 +1,32 @@
+.footer {
+    background-color:black;
+ 
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-content p{
+   color:#959494;
+   font-size: 1rem;
+  }
+  
+  .highlight-footer{
+    color: #fff;
+  }
+  
+  @media (max-width: 850px) {
+    .footer-content {
+      flex-direction: column; 
+    }
+
+  }
+  

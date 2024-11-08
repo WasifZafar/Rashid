@@ -1,0 +1,247 @@
+.home-out{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+.cover-info{
+    width: 50%;
+    position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.info-content{
+     text-align: center;
+    color: #fff; 
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
+    left: 50%;
+    height: 100vh;
+    width: 47%;
+  margin-left: 20px auto;
+}
+svg {
+    width: 100%;
+    height: auto;
+    display: block;
+   margin: 10px auto;
+} 
+text {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1;
+    stroke-dasharray: 400; 
+    stroke-dashoffset: 400;
+    animation: draw 6s ease forwards, fadeIn 3s ease 3s forwards;
+    font-family: 'Arial, sans-serif';
+    font-size: 3.5vmax;
+    font-family: Satisfy;
+    z-index: 99;
+}
+
+@keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+@keyframes fadeIn {
+    to {
+      fill:#fff;
+    }
+}
+.info-content p{
+    font-size: 1.6vmax;
+    color: #d0d0d0;
+    font-weight: 600;
+  
+}
+.button-cover{
+    position: relative;
+   display: flex;
+    justify-content: center;
+   margin-top:4.5vmax;
+   gap: 4vmax;
+   padding: 0 20px;
+}
+.scroll-button{
+    background-color: #080808;
+    padding: 1vmax;
+    width: 14vmax;
+    border-radius: 100px;
+    position: relative;
+    color: #fff;
+    border: 1.7px solid #9d9c9c ;
+    font-size: 1.2vmax;
+    font-weight: 600;
+    margin: 5px;
+}
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.scroll-button::after, .scroll-button::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle),transparent 80%,#fff);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 4px;
+    border-radius: 100px;
+    animation: 4s spin linear infinite;
+}
+.scroll-button::before{
+     filter: blur(0.8rem);  
+    opacity: 1;
+}
+.scroll-button:hover{
+    background-color: #fff;
+    color: #000;
+}
+@keyframes spin{
+    from{
+      --angle: 0deg;
+    }
+    to{
+      --angle: 360deg;
+    }
+}
+  
+.scroll-button1{
+    padding: 1vmax;
+    width: 14vmax;
+    background: transparent;
+    border-radius: 100px;
+    position: relative;
+    color: #fff;
+    border: none;
+    background-color: #088181;
+    font-size: 1.2vmax;
+    font-weight: 700;
+    margin: 5px;
+}  
+.scroll-button1:hover{
+   border:3.5px solid #fff;
+  
+}
+.and{
+    font-size: 2.4vmax;
+    color: #17bebe;
+}
+
+.photo{
+    width: 50%;
+    position: relative;
+    top: 0;
+    right: 0;
+    background-size: cover;
+    background-position: center;
+     animation: fadeBackground 40s infinite; 
+     transition: opacity 1s ease; 
+}
+ @keyframes fadeBackground {
+  0% { 
+    background-image: url('/cover1.jpg');
+      opacity: 0.9;
+  }
+  25% { 
+      background-image: url('/cover2.jpg');
+      opacity: 1;
+  }
+  50% { 
+      background-image: url('/d4.png');
+      opacity: 0.9;
+  }
+  75% { 
+      background-image: url('/d3.png');
+      opacity: 1;
+  }
+  100% { 
+    background-image: url('/final model.jpg');
+      opacity: 0.9;
+  }
+} 
+
+.rough-annotation path {
+  opacity: 0;
+  stroke-dasharray: 1000; 
+  stroke-dashoffset: 1000; 
+  transition: stroke-dashoffset 1.5s ease-in-out, opacity 0.8s ease-in-out;
+}
+.visible path {
+  opacity: 1;
+  stroke-dashoffset: 0; 
+}
+.path {
+  transition-delay: 0.4s; 
+}
+
+.path:nth-child(1) { transition-delay: 1s; }
+.path:nth-child(2) { transition-delay: 1.5s; }
+.path:nth-child(3) { transition-delay: 2s; }
+.path:nth-child(4) { transition-delay: 2.5s; }
+.path:nth-child(5) { transition-delay: 3s; }
+.path:nth-child(6) { transition-delay: 3.5s; }
+.path:nth-child(7) { transition-delay: 4s; }
+.path:nth-child(8) { transition-delay: 4.5s; }
+.path:nth-child(9) { transition-delay: 5s; }
+.path:nth-child(10) { transition-delay: 5.5s; }      
+  
+  @media (max-width: 850px){
+  
+  .button-cover{
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .cover-info{
+    width: 0;
+  }
+  .photo{
+    width: 100%;
+  }
+  .info-content{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-left: 0;
+    width: 90%;
+  }
+  .info-content p{
+    font-size: 3vmax;
+  }
+  .and{
+    font-size: 4.5vmax;
+  }
+  .button-cover{
+    gap: 8vmax;
+    margin-top: 8vmax;
+  }
+  .button-cover{
+    gap: 2vmax;
+  }
+  .scroll-button{
+    padding: 2vmax;
+    font-size: 1.8vmax;
+    width: 25vmax;
+  }
+  .scroll-button1{
+    padding: 2vmax;
+    font-size: 1.8vmax;
+    width: 25vmax;
+  }
+  text{
+    font-size: 7.5vmax;
+    
+  }
+  
+  }
+
+

@@ -1,0 +1,114 @@
+#contact{
+    height: auto;
+    padding-bottom: 14vmax;
+    color: var(--text-color);
+    position: relative;
+    background:linear-gradient(to bottom right,#000,#121212) ;
+    transition: background 0.5s, ease;  
+}
+  .contect-out-box{
+    position: relative;
+    top: 6vmax;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.cont-heading{
+ padding: 20px;
+}
+.cont-heading h2{
+ font-size: 1.4rem;
+ color: #e2e2e2;
+}
+.cont-heading p{
+  font-size: 1.1rem;
+    margin-top: 10px;
+    margin-left: 2rem;
+    color: #868686;
+}
+.contact-cover{
+    position: relative;
+    display: flex;
+    gap: 90px;
+    color:#fff;
+    padding: 20px;
+}
+.follow-link h2{
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+
+}
+.follow-link a{
+ text-decoration: none;
+ color: #868686;
+ display:flex;
+ margin: 5px 7px;
+ font-size: 1.1rem;
+ text-align: center;
+}
+.follow-link a i{
+ margin: 5px;
+}
+.follow-link a:hover{
+ color: #fff;
+}
+.contact-me h2{
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+
+}
+.contact-me a{
+ text-decoration: none;
+ color: #868686;
+ display:flex;
+ margin: 5px 7px;
+ font-size: 1.1rem;
+
+}
+.contact-me a i{
+  margin: 5px;
+  color: #a5a3a3;
+}
+.contact-me a:hover{
+  color:#fff;
+}
+.web-name{
+  width: 100%;
+  position: relative;
+  top: 10vmax;
+  text-align: center;
+}
+.web-name h1{
+  font-size: 4.5vmax;
+ background: linear-gradient(to top, #666666,#000);
+ -webkit-background-clip: text;
+ color:transparent;
+ background-clip: text;
+ font-family: Satisfy;
+}
+.web-name p{
+  font-size: 1.4vmax;
+ background: linear-gradient(to top, #666666,#000);
+ -webkit-background-clip: text;
+ color:transparent;
+ background-clip: text;
+}
+
+  @media (max-width: 850px){
+    #contact{
+      padding-bottom: 19vmax;
+    }
+    .contect-out-box{
+      top: 70px;
+      
+    }
+    .contact-cover{
+      gap: 60px;
+    }
+   
+     .web-name{
+      top: 15vmax;
+     
+    }
+  }
